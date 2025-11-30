@@ -34,7 +34,7 @@ class Barang {
         }
     }
     public void setHarga(double harga) {
-        if(jumlahStok >= 0){
+        if(harga >= 0){
             this.harga = harga;
         }else{
             System.out.println("Harga tidak boleh kurang dari 0.");
