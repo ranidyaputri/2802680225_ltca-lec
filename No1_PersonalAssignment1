@@ -27,10 +27,18 @@ class Barang {
         this.nama = nama;
     }
     public void setJumlahStok(int jumlahStok) {
-        this.jumlahStok = jumlahStok;
+        if(jumlahStok >= 0){
+            this.jumlahStok = jumlahStok;
+        }else{
+            System.out.println("Jumlah stok tidak boleh kurang dari 0.");
+        }
     }
     public void setHarga(double harga) {
-        this.harga = harga;
+        if(jumlahStok >= 0){
+            this.harga = harga;
+        }else{
+            System.out.println("Harga tidak boleh kurang dari 0.");
+        }
     }
     
     // method menampilkan data barang
