@@ -59,6 +59,7 @@ public class Inventaris {
         inventaris[2] = new Barang("Penghapus", 20, 500);
 
         // menampilkan daftar data barang
+        System.out.println("Inventaris Toko:");
         for(int i = 0; i < inventaris.length; i++){
             if(inventaris[i] != null){
                 System.out.print(i+1 + ". ");
